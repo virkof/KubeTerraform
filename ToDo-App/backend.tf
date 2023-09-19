@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "eksterrabucket"
+    bucket = "gitopsbucket-terraform"
     key    = "backend/ToDo-App.tfstate"
     region = "us-east-1"
-    dynamodb_table = "dynamoDB-terra"
+    dynamodb_table = "gitops-dynamoDB-terraform"
   }
 }
